@@ -1,12 +1,13 @@
 .heading {
   color: #ffffff;
 }
+
 .heading:hover {
   color: aqua;
   cursor: pointer;
 }
+
 .main_div {
-  /* border: 5px solid red; */
   width: 70%;
   height: 30rem;
   margin: auto;
@@ -16,12 +17,12 @@
   box-shadow: 0 0 10px rgb(0, 0, 0, 1);
   border-radius: 10px;
 }
+
 body {
-  background-color: #1a1313;
+  background-color: #1A1313;
 }
 
 .text-of-typing {
-  /* border: 1px solid black; */
   width: 75%;
   height: 15rem;
   text-align: start;
@@ -30,8 +31,8 @@ body {
   padding-left: 3%;
   padding-top: 5%;
 }
+
 .input-field {
-  /* border: 1px solid red; */
   width: 75%;
   height: 5rem;
   border-radius: 10px;
@@ -39,26 +40,25 @@ body {
   color: black;
   margin-right: 20%;
 }
+
 .try-again-button {
   display: flex;
-
   text-align: center;
   padding: 30px 50px 30px 50px;
   margin-top: 2%;
   color: #ffffff;
   align-items: center;
-
   border-radius: 10px;
   margin-left: 5%;
   font-size: 21px;
   background: linear-gradient(160deg, rgb(226, 138, 37), rgb(82, 33, 33));
 }
+
 .try-again-button:hover {
   cursor: pointer;
 }
 
 .details-container {
-  /* border: 1px solid white; */
   display: flex;
   margin-top: 2%;
   justify-content: space-around;
@@ -74,8 +74,10 @@ body {
   background-color: black;
 }
 
-@media only screen and (device-width: 390px) and (device-height: 844px) {
-  /* CSS styles for iPhone 12 */
+
+
+/* portrait phones */
+@media only screen and (max-width: 575.98px) {
   .main_div {
     width: 90%;
   }
@@ -98,16 +100,17 @@ body {
   }
 }
 
-@media only screen and (device-width: 820px) and (device-height: 1180px) {
-  /* CSS styles for iPad Air */
+/* landscape phones */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .main_div {
-    width: 80%;
+    width: 85%;
   }
 
   .text-of-typing,
   .input-field {
-    width: 80%;
+    width: 85%;
     font-size: 20px;
+    margin-top: 2%;
   }
 
   .try-again-button {
@@ -120,17 +123,16 @@ body {
   }
 }
 
-@media only screen and (device-width: 768px) and (device-height: 1024px) {
-  /* CSS styles for iPad Mini */
+/* tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .main_div {
-    width: 85%;
+    width: 80%;
   }
 
   .text-of-typing,
   .input-field {
-    width: 85%;
-    font-size: 22px;
-    margin-top: 2%;
+    width: 80%;
+    font-size: 20px;
   }
 
   .try-again-button {
@@ -140,5 +142,50 @@ body {
 
   .details-container {
     font-size: 22px;
+  }
+}
+
+/* desktops */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .main_div {
+    width: 75%;
+  }
+
+  .text-of-typing,
+  .input-field {
+    width: 75%;
+    font-size: 21px;
+    margin-top: 5%;
+  }
+
+  .try-again-button {
+    padding: 32px 52px;
+    font-size: 24px;
+  }
+
+  .details-container {
+    font-size: 24px;
+  }
+}
+
+/* large desktops */
+@media only screen and (min-width: 1200px) {
+  .main_div {
+    width: 70%;
+  }
+
+  .text-of-typing,
+  .input-field {
+    width: 70%;
+    font-size: 21px;
+  }
+
+  .try-again-button {
+    padding: 32px 50px;
+    font-size: 26px;
+  }
+
+  .details-container {
+    font-size: 26px;
   }
 }
