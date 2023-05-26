@@ -1,0 +1,144 @@
+.heading {
+  color: #ffffff;
+}
+.heading:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.main_div {
+  /* border: 5px solid red; */
+  width: 70%;
+  height: 30rem;
+  margin: auto;
+  margin-top: 2%;
+  background: linear-gradient(160deg, rgb(194, 99, 45), rgb(0, 0, 0));
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  border-radius: 10px;
+}
+body {
+  background-color: #1a1313;
+}
+
+.text-of-typing {
+  /* border: 1px solid black; */
+  width: 75%;
+  height: 15rem;
+  text-align: start;
+  font-size: 23px;
+  color: #ffffff;
+  padding-left: 3%;
+  padding-top: 5%;
+}
+.input-field {
+  /* border: 1px solid red; */
+  width: 75%;
+  height: 5rem;
+  border-radius: 10px;
+  font-size: 23px;
+  color: black;
+  margin-right: 20%;
+}
+.try-again-button {
+  display: flex;
+
+  text-align: center;
+  padding: 30px 50px 30px 50px;
+  margin-top: 2%;
+  color: #ffffff;
+  align-items: center;
+
+  border-radius: 10px;
+  margin-left: 5%;
+  font-size: 21px;
+  background: linear-gradient(160deg, rgb(226, 138, 37), rgb(82, 33, 33));
+}
+.try-again-button:hover {
+  cursor: pointer;
+}
+
+.details-container {
+  /* border: 1px solid white; */
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-around;
+  border-radius: 10px;
+  background: linear-gradient(160deg, rgb(194, 99, 45), rgb(0, 0, 0));
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.current-word {
+  background-color: black;
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+  /* CSS styles for iPhone 12 */
+  .main_div {
+    width: 90%;
+  }
+
+  .text-of-typing,
+  .input-field {
+    width: 90%;
+    font-size: 18px;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+
+  .try-again-button {
+    padding: 20px 40px;
+    font-size: 18px;
+  }
+
+  .details-container {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (device-width: 820px) and (device-height: 1180px) {
+  /* CSS styles for iPad Air */
+  .main_div {
+    width: 80%;
+  }
+
+  .text-of-typing,
+  .input-field {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .try-again-button {
+    padding: 25px 45px;
+    font-size: 20px;
+  }
+
+  .details-container {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) {
+  /* CSS styles for iPad Mini */
+  .main_div {
+    width: 85%;
+  }
+
+  .text-of-typing,
+  .input-field {
+    width: 85%;
+    font-size: 22px;
+    margin-top: 2%;
+  }
+
+  .try-again-button {
+    padding: 28px 48px;
+    font-size: 22px;
+  }
+
+  .details-container {
+    font-size: 22px;
+  }
+}
